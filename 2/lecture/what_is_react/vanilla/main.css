@@ -11,4 +11,76 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+#container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #eee;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+}
+
+.card__img {
+  width: 250px;
+  object-fit: cover;
+}
+
+.card__title {
+  font-size: 25px;
+}
+
+.btn {
+  background-color: #b0ea35;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+/* MODAL */
+#backdrop {
+  background: rgba(0,0,0,.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal {
+  background-color: white;;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal p {
+  color: gray;
+}
+
+.modal input {
+  padding: 10px 15px;
+  border: 1px solid #b0ea35;
+  border-radius: 10px;
+  margin: 20px 10px;  
 }
